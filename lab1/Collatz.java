@@ -3,14 +3,15 @@
  */
 public class Collatz {
 
-    /** Buggy implementation of nextNumber! */
+    /** nextNumber tells us the next number
+     * in Collatz sequence. */
     public static int nextNumber(int n) {
-        if (n  == 2) {
+        if (n == 2) {
             return 1;
         } else if (n % 2 == 1) {
             return 3 * n + 1;
         } else {
-            return n * 2;
+            return n / 2;
         }
     }
 
